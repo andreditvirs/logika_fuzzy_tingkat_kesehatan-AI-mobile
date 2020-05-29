@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="32dp">
+        <LinearLayout
+            android:id="@+id/lLJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aplikasi Logika Fuzzy"
+                android:fontFamily="@font/poppins_medium"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tingkat Kesehatan"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorSecondary"
+                android:textAlignment="center"
+                android:textSize="26sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLProcess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lLJudul"
+            android:layout_marginTop="16dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tinggi"
+                    android:fontFamily="@font/poppins_regular"/>
+                <EditText
+                    android:id="@+id/tinggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Tinggi badan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Berat"/>
+                <EditText
+                    android:id="@+id/berat"
+                    android:inputType="numberDecimal"
+                    android:hint="Berat badan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProcess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lLProcess"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Proses"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorLight"
+            android:background="@drawable/round_area"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnProcess">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rincian Hasil"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSecondary"
+                android:text="Hasil dari Max Method"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/maxMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="---Belum ada hasil---"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="14sp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hasil dari Centroid Method"
+                android:textSize="18sp"
+                android:textColor="@color/colorSecondary"
+                android:fontFamily="@font/poppins_light"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/centroidMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="---Belum ada hasil---"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="14sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

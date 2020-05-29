@@ -1,0 +1,2 @@
+rootProject.name='Logika Fuzzy Tingkat Kesehatan'
+include ':app'
